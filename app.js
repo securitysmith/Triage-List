@@ -76,12 +76,12 @@ function reoList() {
 	wrList(patientList);
 }
 
-function wrList() {
+function wrList(aList) {
     document.write("<table><tr><td colspan=2><h1>ER Triage List</h1></td></tr><tr><td><table><tr><td colspan=2><h3>new list</h3></td></tr>");
-    i = patientList.length;
+    i = aList.length;
     let j = 0;
     for (j = 1; j <= i; j++) {
-       document.write("<tr><td>" + j + "</td><td>" + patientList[j-1] + "</td></tr>");
+       document.write("<tr><td>" + j + "</td><td>" + aList[j-1] + "</td></tr>");
     } 
     document.write("</table></td><td><table><tr><td colspan=2><h3>initial list</h3></td></tr>");
     i = origList.length;
