@@ -38,7 +38,7 @@ function updList() {
     while (patientList.indexOf(patient) < 0) {
        patient = prompt("Please enter a name from the list\r\n" + patientList);
     }    
-    let newName = prompt("Enter new patient name:")
+    let newName = prompt("Enter new patient name:");
     patientList[patientList.indexOf(patient)] = newName;
     alert("Name updated.\r\n" + patientList);
 	wrList(patientList);
@@ -55,7 +55,7 @@ function delList() {
 }
 
 function addList() {
-	let patient = prompt("Enter patient's name:")
+	let patient = prompt("Enter patient's name:");
 	patientList.push(patient);
     alert("Name added.\r\n" + patientList);
 	wrList(patientList);
@@ -83,12 +83,12 @@ function wrList() {
     for (j = 1; j <= i; j++) {
        document.write("<tr><td>" + j + "</td><td>" + patientList[j-1] + "</td></tr>");
     } 
-    document.write("</table></td><td><table><tr><td colspan=2><h3>initial list</h3></td></tr>")
+    document.write("</table></td><td><table><tr><td colspan=2><h3>initial list</h3></td></tr>");
     i = origList.length;
     for (j = 1; j <= i; j++) {
        document.write("<tr><td>" + j + "</td><td>" + origList[j-1] + "</td></tr>");
     }
-    document.write("</table></td></tr></table>")    
+    document.write("</table></td></tr></table>");    
 }
 
 
